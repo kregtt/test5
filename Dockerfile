@@ -2,8 +2,8 @@
 
 # FROM rocker/shiny:4.1.2
 
-FROM thinkr/rfull
 
+FROM gitlab-registry.insee.fr:443/datascience/registry-prod/onyxia-r-minimal:r4.3.2
 
 # Installation des packages R necessaires à l'application
 RUN Rscript -e "install.packages(c('shiny','shinyjs','aws.s3','lubridate','dplyr','stringi','stringr','tableHTML','tidyr','writexl','rmarkdown','grid','gridExtra','openxlsx','knitr','png'))"
